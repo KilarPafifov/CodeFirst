@@ -10,18 +10,17 @@
         <td>category</td>
         <td>price</td>
         <td>horsePower</td>
-
     </tr>
     @foreach (var item in ViewBag.Cars)
     {
-    <tr>
-        <td>@item.carID</td>
-        <td>@item.mark</td>
-        <td>@item.model</td>
-        <td>@item.category</td>
-        <td>@item.price</td>
-        <td>@item.horsePower</td>
-        
-    </tr>
+        <tr>
+            <td>@item.carID</td>
+            <td>@item.mark</td>
+            <td>@item.model</td>
+            <td>@item.category</td>
+            <td>@item.price</td>
+            <td>@item.horsePower</td>
+        </tr>
     }
+    <tr><td><a input href="/Home/AddCar"a/>add car</td></tr>
 </table>

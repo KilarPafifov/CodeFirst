@@ -1,0 +1,27 @@
+﻿@model CodeFirst.Models.Car
+ 
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+   
+    <title>RsvpForm</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary()
+        <p>Mark: @Html.TextBoxFor(x => x.mark)</p>
+        <p>Model: @Html.TextBoxFor(x => x.model)</p>
+        <p>Category: @Html.TextBoxFor(x => x.category)</p>
+        <p>Price: @Html.TextBoxFor(x => x.price)</p>
+        <p>HP: @Html.TextBoxFor(x => x.horsePower)</p>
+        <input type="submit" value="Submit RSVP" />
+    }
+</body>
+</html>

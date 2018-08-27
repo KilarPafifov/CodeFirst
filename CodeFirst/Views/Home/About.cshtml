@@ -1,7 +1,29 @@
-﻿@{
-    ViewBag.Title = "About";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+﻿@model CodeFirst.Models.Car
+   
 
-<p>Use this area to provide additional information.</p>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>About</title>
+</head>
+<body>
+    @{
+        try
+        {
+            
+
+        }
+        catch (Exception)
+        {
+            @:<b>Sorry - we couldn't send the email to confirm your RSVP.</b>
+        }
+    }
+    
+</body>
+</html>

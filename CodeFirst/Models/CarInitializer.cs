@@ -16,8 +16,8 @@ namespace CodeFirst.Models
                 mark = "BMW",
                 model = "x5",
                 category = "light",
-                horsePower = 600,
-                price = 6000000
+                horsePower = "600",
+                price = "6000000"
             });
             
             context.Cars.Add(new Car
@@ -26,8 +26,8 @@ namespace CodeFirst.Models
                 mark = "Audi",
                 model = "q7",
                 category = "light",
-                horsePower = 500,
-                price = 5000000
+                horsePower = "500",
+                price = "5000000"
             });
             
             base.Seed(context);
